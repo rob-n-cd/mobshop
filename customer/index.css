@@ -1,0 +1,273 @@
+ .iphone{
+    margin-left: 80px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: -28px;
+  }
+  .pnothing{
+    margin-left: 310px;
+    font-weight: bold;
+    margin-top:-10px ;
+    margin-bottom: -28px;
+  }
+  .psamsung{
+    margin-left: 505px;
+    font-weight: bold;
+    margin-top: -6px;
+    margin-bottom: -28px;
+  }
+  .realme{
+    margin-left: 660px;
+    font-weight: bold;
+    margin-top: -6px;
+    margin-bottom: -28px;
+  }
+  .real{
+    margin-left: 880px;
+    font-weight: bold;
+    margin-top: -6px;
+    margin-bottom: 35px;
+  }
+  .vivo{
+    margin-left: 125px;
+    font-weight: bold;
+    margin-top: -6px;
+    margin-bottom: -28px;
+  }
+  .one{
+    margin-left: 280px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: -28px;
+  }
+  .hua{
+    margin-left: 505px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: -28px;
+  }
+  .oppo{
+    margin-left: 680px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: -28px;
+  }
+  .pix{
+    margin-left: 880px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: 35px;
+  }
+  .iq{
+    margin-left: 135px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: -98px;
+  }
+  .lb{
+    margin-left: 300px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: -98px;
+  }
+  .nokia{
+    margin-left: 500px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: -258px;
+  }
+  .ts{
+    margin-left: 660px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: -98px;
+  }
+  .redmi{
+    margin-left: 860px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: -98px;
+  }
+  .search{
+    margin-left: 170px;
+    margin-top: 10px;
+    position: relative;
+    bottom: -10px;
+  }
+  input[type=search]{
+    font-style: italic;
+    font-weight: bolder;
+    border-radius: 20px;
+    border-color:rgb(5, 39, 56);
+  }
+  .words{
+    margin-top: 48px;
+    margin-left: 105px;
+    color: white;
+  }
+  .icons{
+    position: relative;
+    bottom: -200px;
+    margin-left: 80px;
+  }
+body{
+  padding-bottom: 150px;
+}
+  .body{  
+    margin-bottom: -1003px;
+    margin-left: -80px;
+    margin-top: 100px;
+    padding-left: 260px;
+    padding-bottom: 550px;
+    bottom:-10%;
+    height: 544px;
+    width:1092px;
+    background-color: white;
+  }
+  .link{
+    justify-content: space-between;
+    margin-top: -23px;
+  }
+  .mycart{
+    width: 10px;
+    height: 10px;
+    font-size:20px;
+    background: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 6px;
+    color: aliceblue;
+    transition: .8s;
+    margin-left:-200px;
+  }
+ .btnlogout{
+    width: 90px;
+    height: 45px;
+    font-size:20px;
+    background: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 6px;
+    color: aliceblue;
+    transition: .8s;
+    margin-left: 950px;
+    }
+                       .btnlogout:hover{
+                          color: rgb(5, 39, 56);
+                         }
+                         .top{
+                              background-color: orangered;      
+                             border: transparent solid;
+                             margin-top: 10px;
+                             width: 1020px;
+                             margin-right: 385px;
+                             padding-left: 260px;
+                             }
+                             header{
+                                    border: transparent solid black;
+                                    top:0;    
+                                    width: 118%;
+                                    height:91px;
+                                    position: relative;
+                                    margin-top: -100px;
+                                    margin-left: -190px;
+                                    padding: 20px,100px;
+                                   /*display: flex;*/
+                                    background:rgb(5, 39, 56);
+                                   }           
+                                   .slide{
+                                           margin-left:-8px;
+                                           width: 250px;
+                                           height: 1007px;
+                                           background-color:rgb(5, 39, 56);
+                                         }
+                                         .head{
+                                            font-size: 30px;
+                                            margin-left: 37px;
+                                            font-weight: 500px;
+                                            left: 1px;
+                                            top:0;  
+                                           }
+                                           hr{
+                                              height: 6px;
+                                              background-color: orangered;
+                                              border-color: orangered;
+                                             }
+                                             *{ 
+                                               text-decoration: none;
+                                               }
+                                               span{
+                                                    margin-left: 75px;
+                                                    font-size: 20px;
+                                                   }
+                                                   a{  
+                                                     color:aliceblue;
+                                                    }
+                                                    a:hover{
+                                                            color: rgb(130, 35, 5); 
+                                                           }
+                                                           ion-icon {
+                                                                      color: aliceblue;
+                                                                    }
+                                                                    
+                                                                            img{
+                                                                              margin-top:  30px;
+                                                                              margin-left: 100px;
+                                                                            }
+                                                                            .nothing{
+                                                                              margin-top:  -270px;
+                                                                              margin-left: 270px;
+                                                                            }
+                                                                            .samsung{
+                                                                              margin-top:  -270px;
+                                                                              margin-left: 440px;
+                                                                            }
+                                                                            .realmenarzon{
+                                                                              margin-top:  -270px;
+                                                                              margin-left: 640px;
+                                                                            }
+                                                                            .oneplus{
+                                                                              margin-top:  -180px;
+                                                                              margin-left: 270px;
+                                                                            }
+                                                                            .realme10{
+                                                                              margin-top:  -270px;
+                                                                              margin-left: 840px;
+                                                                            }
+                                                                            .vivot2x{
+                                                                              margin-top:  30px;
+                                                                              margin-left: 100px;
+                                                                            }
+                                                                            .pixel{
+                                                                              margin-top:  -180px;
+                                                                              margin-left:  840px;
+                                                                            }
+                                                                            .oppo78{
+                                                                              margin-top:  -180px;
+                                                                              margin-left: 640px;
+                                                                            }
+                                                                            .huawei{
+                                                                              margin-top:  -180px;
+                                                                              margin-left:  440px;
+                                                                            }
+                                                                            .iqooz7{
+                                                                              margin-top:  30px;
+                                                                              margin-left: 100px;
+                                                                            }
+                                                                            .lavablaze{
+                                                                              margin-top:   -80px;
+                                                                              margin-left:   270px;
+                                                                            }
+                                                                            .nokiac22{
+                                                                              margin-top:  -80px;
+                                                                              margin-left: 440px;
+                                                                            }
+                                                                            .tecnospark{
+                                                                              margin-top:  80px;
+                                                                              margin-left: 640px;
+                                                                            }
+                                                                            .redminote12pro{
+                                                                              margin-top:  -80px;
+                                                                              margin-left: 840px;
+                                                                            }
+                                                                             
