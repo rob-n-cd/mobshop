@@ -16,7 +16,7 @@
               <div class="body">
               <header>
                 <h1 class="head">
-                <img class="logo" src="\images\ruby (1).png" wigth="50px" height="50px"><font color="skyblue">MARTTIZE</font><br>
+                <img class="logo" src="\mobshop\images\ruby (1).png" wigth="50px" height="50px"><font color="skyblue">MARTTIZE</font><br>
                   </h1>
                   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                     <div class="link">    

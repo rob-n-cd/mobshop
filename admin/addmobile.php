@@ -18,7 +18,7 @@
         <th>
             <a href="/mobshop/admin/adminpage.php"><-BACK</a>
             <font size=4>
-            <h1 class="mobcart"><b><img class="logo" src="\images\ruby (1).png" wigth="50px" height="50px"></img><h1>
+            <h1 class="mobcart"><b><img class="logo" src="\mobshop\images\ruby (1).png" wigth="50px" height="50px"></img><h1>
                 <form  action="insertmobile.php"  method="POST" enctype="multipart/form-data" >
                 <?php
             include('connection.php');

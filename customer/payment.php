@@ -18,7 +18,7 @@ $_SESSION['mname'] = $row['mname'];
 <?php 
         $image = $row['mimg'];
 echo "<h2 class = heading>PRODECT - IMAGE:</h2>
-<img class=pic src='/images/".$image."' width = 135px hight = 100px/><br><br><br>";
+<img class=pic src='/mobshop/images/".$image."' width = 135px hight = 100px/><br><br><br>";
 echo"
 <style>
 .pic{

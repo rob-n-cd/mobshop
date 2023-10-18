@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="project.css">
 <body>
     <header>
-<h1 class="mobcart"><b><img class="logo" src="\images\ruby (1).png" wigth="50px" height="50px"><font class="head" color="skyblue">MARTTIZE</font><br></b></h1>
+<h1 class="mobcart"><b><img class="logo" src="\mobshop\images\ruby (1).png" wigth="50px" height="50px"><font class="head" color="skyblue">MARTTIZE</font><br></b></h1>
 <style> 
 .head{
     font-size: 25px;

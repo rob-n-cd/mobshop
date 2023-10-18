@@ -4,7 +4,7 @@
               
               <header>
                 <h1 class="head">
-                <img class="logo" src="\images\ruby (1).png" wigth="50px" height="50px"><font color="skyblue">MARTTIZE</font><br>
+                <img class="logo" src="\mobshop\images\ruby (1).png" wigth="50px" height="50px"><font color="skyblue">MARTTIZE</font><br>
                 
                   </h1>
                     <div class="link">    

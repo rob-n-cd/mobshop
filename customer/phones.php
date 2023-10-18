@@ -6,7 +6,7 @@
             <div class="body">
               <header>
                 <h1 class="head">
-                    <a href="index.php"><img class="logo" src="\images\ruby (1).png" wigth="50px" height="50px"><font class="head" color="skyblue">MARTTIZE</font></a><br>                  
+                    <a href="index.php"><img class="logo" src="\mobshop\images\ruby (1).png" wigth="50px" height="50px"><font class="head" color="skyblue">MARTTIZE</font></a><br>                  
                     <?php
             include('/wamp64/www/mobshop/admin/connection.php');
             $dis="SELECT * FROM `category` WHERE 1";
