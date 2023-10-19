@@ -13,7 +13,7 @@
 <title>Smarttize-register</title>
 <body>
     <header>
-<h1 class="mobcart"><b>Smarttize</b></h1>
+    <h1 class="mobcart"><b><img class="logo" src="\mobshop\images\ruby (1).png" wigth="50px" height="50px"><font class="head" color="skyblue">MARTTIZE</font><br></b></h1>
 <nav class="navigation">
     <form method="POST">
     <BUTTON class="btnlogin" type="submit" name="login">LOGIN</BUTTON>
@@ -67,7 +67,7 @@
     margin-left: 110px ;
 }
     body{
-    background-image:url('/images/bg.jpg');
+    background-image:url('/mobshop/images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
