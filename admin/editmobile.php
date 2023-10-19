@@ -50,7 +50,7 @@ $row = mysqli_fetch_array($dis);
                 <span><?php echo "$row[mbattery]"; ?></span><br><br>
        </div>
          <?php
-            include('/wamp64/www/admin/connection.php');
+    
             $disc="SELECT * FROM `category` WHERE 1";
             $result=mysqli_query($conn,$disc);
             echo "<select name=option class=category>";

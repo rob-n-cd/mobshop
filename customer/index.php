@@ -49,15 +49,17 @@ $count = 0;
 $result=mysqli_query($conn,$dis);
 if(mysqli_num_rows($result) > 0)
 {
-   echo" <body  bgcolor=#1d2b3a>
-   <table  class = imgtable>";
+   echo" 
+   
+   <table  class = imgtable>
+   <div class = items>";
         while($row=mysqli_fetch_assoc($result))
         {
           if($count <= 3)
           {
             $image = $row['mimg'];
             echo"<b>
-            <td><a class = img href='payment.php?name=$row[mname]'><span class = spanimg><img class=image src='/mobshop/images/".$image."'/><p class = name>".$row['mname']."<BR><BR>BUY NOW</p></span></a></td>";
+            <td><a class = img href='payment.php?name=$row[mname]'><span class = spanimg><img class=image src='/mobshop/images/".$image."'/><p class = name>".$row['mname']."</p> <span class = buy >BUY NOW</span></span></a></td>";
              $count++;
           }
           else
@@ -65,20 +67,26 @@ if(mysqli_num_rows($result) > 0)
             echo "<tr>";
            // echo "<td><a href='#'><img class=image src='/images/".$image."'/></a></td>";
             $count = -1;
-            $count++;     
+            $count++;  
+            echo"</tr>";   
           }
         }
-        echo"</table>
+        echo"
+        <div>
+        </table>
         <style>
+        .items{
+          margin-bottom:100px;
+        }
         .spanimg{
           display:inline-block;
           width: 200px;
-          height: 290px;
+          height: 300px;
           border:1px solid black;
           margin-top:30px;
         background-color:whitesmoke;
       border-radius:10px;
-       box-shadow: 7px 7px 3px whitesmoke;
+       box-shadow: 7px 7px 3px grey;
         }
         .spanimg:hover{
           transform:translate(0px,-8px);

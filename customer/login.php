@@ -39,7 +39,7 @@ body{
         <a href="for.php"><b>Forgot Password</b></a>
         </div><br>
        <a class="register" href="register.php">Register- </a><input type="submit"name="submit"value="Submit"><br><br>
-        <a class="adlogin"href="/admin/adminlogin.php"><b>admin_login</b></a>
+        <a class="adlogin"href="/mobshop/admin/adminlogin.php"><b>admin_login</b></a>
     </center> 
         </form></th>
     </font>

@@ -41,6 +41,7 @@
 <style>
   .logo{
     margin-left: 10px;
+    margin-top: 30px;
   }
   .forgot-password{
     margin-left: 100px;
@@ -75,7 +76,7 @@ body{
   }
   .link{
     justify-content: space-between;
-    margin-top: -23px;
+    margin-top: -55px;
     margin-left: 300px;
   }
   .mycart{

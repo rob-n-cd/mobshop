@@ -9,6 +9,7 @@ $pass = $_SESSION['pass'];
   $dis="DELETE FROM `register` WHERE `password` = '$pass'";
     if(mysqli_query($conn,$dis))
     {
+        echo"<script>prompt('youer account is removed permenatily');</script>";
         header('location:login.php');
     }
    
