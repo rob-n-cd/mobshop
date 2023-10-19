@@ -13,7 +13,7 @@
     top:0;  
 }
 body{
-    background-image:url('/images/bg.jpg');
+    background-image:url('/mobshop/images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
