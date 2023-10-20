@@ -138,7 +138,7 @@
           echo "</table>
           <style>
           .bg{
-           margin-top:-40px;
+           margin-top:-140px;
           }
           .images{
            width:55px;
