@@ -13,6 +13,7 @@ $display = "SELECT * FROM `mycart` WHERE 1";
 <tr> <th>customer name </th>
        <th>address</th>
        <th>mobile name</th>
+       <th>mobile name</th>
        <th>mobile price</th>
        <th>purchased or not</th>
        </tr>";
