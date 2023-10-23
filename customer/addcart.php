@@ -6,11 +6,12 @@ session_start();
    $name =$_SESSION['hname']; 
   $mname = $_SESSION['mname'];
   $price = $_SESSION['mprice'];
+  $quandity = $_SESSION['value'];
   $address = $_SESSION['address'];
 ?>
 <?php
 
-$sql = "INSERT INTO `mycart`(`name`,`address`,`mobilename`,`mobileprice`) VALUES('$name','$address','$mname','$price')";
+$sql = "INSERT INTO `mycart`(`name`,`address`,`mobilename`,`mobileprice`,`quandity`) VALUES('$name','$address','$mname','$price','$quandity')";
 if(mysqli_query($conn,$sql))
 {
    header('location:index.php');

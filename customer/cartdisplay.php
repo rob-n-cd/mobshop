@@ -13,7 +13,7 @@ $display = "SELECT * FROM `mycart` WHERE 1";
 <tr> <th>customer name </th>
        <th>address</th>
        <th>mobile name</th>
-       <th>mobile name</th>
+       <th>quandity</th>
        <th>mobile price</th>
        <th>purchased or not</th>
        </tr>";
@@ -23,6 +23,7 @@ $display = "SELECT * FROM `mycart` WHERE 1";
    <td class = tdname><b>". $row['name']."</b></td>
    <td class = tdname><b>".$row['address']."</b></td>
    <td class = tdname><b>". $row['mobilename']."</b></td>
+   <td class = tdname><b>". $row['quandity']."</b></td>
    <td class = tdname><b>".$row['mobileprice']."</b></td>";
    $payment = $row['mobileprice'];
    if($payment!=0)
