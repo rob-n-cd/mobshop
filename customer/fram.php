@@ -72,7 +72,7 @@
                      width: 200px;
                      height: 290px;
                      border:1px solid black;
-                     margin-top:30px;
+                     margin-top:60px;
                    background-color:whitesmoke;
                  border-radius:10px;
                   box-shadow: 7px 7px 3px whitesmoke;
@@ -139,6 +139,7 @@
           <style>
           .bg{
            margin-top:-140px;
+           margin-left:100px;
           }
           .images{
            width:55px;
@@ -193,7 +194,7 @@
               outline: none;
               height:30px;
               border-bottom: 2px solid;
-              margin-top: 10px;
+              margin-top: 6px;
               margin-left: 290px;
               background-color:rgb(5, 39, 56);
               transition: 6s;
@@ -227,7 +228,7 @@
             }
             .link{
               justify-content: space-between;
-              margin-top: -80px;
+              margin-top: -40px;
             }
             .mycart{
               width: 10px;

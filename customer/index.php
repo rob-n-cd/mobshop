@@ -46,25 +46,37 @@
 
 $count = 0;
  $dis="SELECT * FROM `addmobile` WHERE 1 ";
-$result=mysqli_query($conn,$dis);
-if(mysqli_num_rows($result) > 0)
-{
+$result1=mysqli_query($conn,$dis);
    echo" 
    
    <table  class = imgtable>
+   <tr>
    <div class = items>";
-        while($row=mysqli_fetch_assoc($result))
+        while($row=mysqli_fetch_assoc($result1))
         {
           if($count <= 3)
           {
             $image = $row['mimg'];
-            echo"<b>
-            <td><a class = img href='payment.php?name=$row[mname]'><span class = spanimg><img class=image src='/mobshop/images/".$image."'/><p class = name>".$row['mname']."</p> <span class = buy >BUY NOW</span></span></a></td>";
+            echo"
+          <td>
+            <a class = img href='payment.php?name=$row[mname]'>
+                  <span class = spanimg>
+                 <br> <img class=image src='/mobshop/images/".$image."'/><p class = name>".$row['mname']."</p>
+                                          
+                   </span>
+          
+            <br>
+            <div class = buy >BUY NOW</div>
+            <input type=color name=sop>
+            </a>
+          </td>
+        
+          ";
              $count++;
           }
           else
           {
-            echo "<tr>";
+            echo "";
            // echo "<td><a href='#'><img class=image src='/images/".$image."'/></a></td>";
             $count = -1;
             $count++;  
@@ -75,6 +87,15 @@ if(mysqli_num_rows($result) > 0)
         <div>
         </table>
         <style>
+        .buy{
+          margin-top:-20px;
+          margin-left:80px;
+          border-radius:8px;
+          background:yellow;
+          color:;
+          font-weight:bolder;
+          text-align:center;
+        }
         .items{
           margin-bottom:100px;
         }
@@ -84,6 +105,7 @@ if(mysqli_num_rows($result) > 0)
           height: 300px;
           border:1px solid black;
           margin-top:30px;
+          
         background-color:whitesmoke;
       border-radius:10px;
        box-shadow: 7px 7px 3px grey;
@@ -115,7 +137,6 @@ if(mysqli_num_rows($result) > 0)
             color:#00dfc4;
          }
          </style>";
-      }
                  ?>
                   <!--  <img src="/images/iphone.jpg" wigth="160px" height="160px"><br>
                     <p class="iphone">iphone 14 pro max(256GB)</p></a>
@@ -182,6 +203,7 @@ $result=mysqli_query($conn,$dis);
        <style>
        .bg{
         margin-top:-140px;
+        margin-left:100px;
        }
        .images{
         width:55px;
@@ -227,96 +249,7 @@ $result=mysqli_query($conn,$dis);
   .phones:hover{
     color: black;
   }
-  .iphone{
-    margin-left: 80px;
-    font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: -28px;
-  }
-  .pnothing{
-    margin-left: 310px;
-    font-weight: bold;
-    margin-top:-10px ;
-    margin-bottom: -45px;
-  }
-  .psamsung{
-    margin-left: 450px;
-    font-weight: bold;
-    margin-top: -6px;
-    margin-bottom: -45px;
-  }
-  .realme{
-    margin-left: 660px;
-    font-weight: bold;
-    margin-top: -6px;
-    margin-bottom: -28px;
-  }
-  .real{
-    margin-left: 880px;
-    font-weight: bold;
-    margin-top: -6px;
-    margin-bottom: 35px;
-  }
-  .vivo{
-    margin-left: 125px;
-    font-weight: bold;
-    margin-top: -6px;
-    margin-bottom: -28px;
-  }
-  .one{
-    margin-left: 280px;
-    font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: -28px;
-  }
-  .hua{
-    margin-left: 505px;
-    font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: -28px;
-  }
-  .oppo{
-    margin-left: 680px;
-    font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: -28px;
-  }
-  .pix{
-    margin-left: 880px;
-    font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: 35px;
-  }
-  .iq{
-    margin-left: 135px;
-    font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: -98px;
-  }
-  .lb{
-    margin-left: 300px;
-    font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: -98px;
-  }
-  .nokia{
-    margin-left: 500px;
-    font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: -258px;
-  }
-  .ts{
-    margin-left: 660px;
-    font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: -98px;
-  }
-  .redmi{
-    margin-left: 860px;
-    font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: -98px;
-  }
+  
   input[type=search]{
     font-style: italic;
     font-weight: bolder;
@@ -328,7 +261,7 @@ $result=mysqli_query($conn,$dis);
     outline: none;
     height:30px;
     border-bottom: 2px solid;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: 290px;
     background-color:rgb(5, 39, 56);
     transition: 6s;
@@ -362,7 +295,7 @@ body{
   }
   .link{
     justify-content: space-between;
-    margin-top: -80px;
+    margin-top: -40px;
   }
   .mycart{
     width: 10px;
@@ -475,66 +408,7 @@ body{
                                                                       color: aliceblue;
                                                                     }
                                                                     
-                                                                            img{
-                                                                              margin-top:  30px;
-                                                                              margin-left: 100px;
-                                                                            }
-                                                                            .nothing{
-                                                                              margin-top:  -270px;
-                                                                              margin-left: 270px;
-                                                                            }
-                                                                            .samsung{
-                                                                              margin-top:  -270px;
-                                                                              margin-left: 440px;
-                                                                            }
-                                                                            .realmenarzon{
-                                                                              margin-top:  -270px;
-                                                                              margin-left: 640px;
-                                                                            }
-                                                                            .oneplus{
-                                                                              margin-top:  -180px;
-                                                                              margin-left: 270px;
-                                                                            }
-                                                                            .realme10{
-                                                                              margin-top:  -270px;
-                                                                              margin-left: 840px;
-                                                                            }
-                                                                            .vivot2x{
-                                                                              margin-top:  30px;
-                                                                              margin-left: 100px;
-                                                                            }
-                                                                            .pixel{
-                                                                              margin-top:  -180px;
-                                                                              margin-left:  840px;
-                                                                            }
-                                                                            .oppo78{
-                                                                              margin-top:  -180px;
-                                                                              margin-left: 640px;
-                                                                            }
-                                                                            .huawei{
-                                                                              margin-top:  -180px;
-                                                                              margin-left:  440px;
-                                                                            }
-                                                                            .iqooz7{
-                                                                              margin-top:  30px;
-                                                                              margin-left: 100px;
-                                                                            }
-                                                                            .lavablaze{
-                                                                              margin-top:   -80px;
-                                                                              margin-left:   270px;
-                                                                            }
-                                                                            .nokiac22{
-                                                                              margin-top:  -80px;
-                                                                              margin-left: 440px;
-                                                                            }
-                                                                            .tecnospark{
-                                                                              margin-top:  80px;
-                                                                              margin-left: 640px;
-                                                                            }
-                                                                            .redminote12pro{
-                                                                              margin-top:  -80px;
-                                                                              margin-left: 840px;
-                                                                            }
+                                                                            
                                                                              
 </style>
 
