@@ -1,51 +1,4 @@
-<html>
-<title>Smarttize-login</title>
-<link rel="stylesheet" href="project.css">
-<body>
-    <header>
-<h1 class="mobcart"><b><img class="logo" src="\mobshop\images\ruby (1).png" wigth="50px" height="50px"><font class="head" color="skyblue">MARTTIZE</font><br></b></h1>
-<style> 
-.head{
-    font-size: 25px;
- margin-left: 1px;
- font-style: italic;      
-   left: 1px;
-    top:0;  
-}
-body{
-    background-image:url('/mobshop/images/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-</style>
-                                           
-<nav class="navigation">
-    <BUTTON class="btnlogin">Login</BUTTON>
-    </nav>
-</header><center>
-        <h2>Login - Smarttize</h2>
-    <br>
-    <div class="box">
-    <table>
-    <tr><th>
-        <form action="" method="POST">
-            
-            <font size=5><br>
-        Email:<input type="text" name="email" placeholder="Username"><br><br>
-        Password:<input type="password" name="pass" placeholder="Password">
-        <div class="remember-forgot"><br>
-        <label><input type="checkbox">-Remember</label>
-        <a href="for.php"><b>Forgot Password</b></a>
-        </div><br>
-       <a class="register" href="register.php">Register- </a><input type="submit"name="submit"value="Submit"><br><br>
-        <a class="adlogin"href="/mobshop/admin/adminlogin.php"><b>admin_login</b></a>
-    </center> 
-        </form></th>
-    </font>
-    </tr>
-</table>
-</div>
+
 <?php
 if(isset($_POST['submit']))
 {
@@ -73,9 +26,8 @@ if(isset($_POST['submit']))
         header('location:index.php?');
     }
     else{
-        echo"<br<br><br><b style = color:red;solid;>password or email is uncurrect!<br> try-again<b>";
+        header('location:face.html');
+        echo"<script>alert('password or email is error');</script>";
     }
 }
 ?>
-</body>
-</html>

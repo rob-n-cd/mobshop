@@ -84,7 +84,6 @@ echo $file->errors();
         <div class="step active"></div>
         <div class="step active"></div>
         <div class="step"></div>
-        <div class="step"></div>
       </div>
 
       <div class="payment-method">

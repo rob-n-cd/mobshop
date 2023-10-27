@@ -30,16 +30,20 @@ $display = "SELECT * FROM `mycart` WHERE 1";
  {
     $purchase = "Purchased";
     echo"<td class = tdgreen><b>".$purchase."</b></td>";
+    echo"
+    <td class = opns><a class= op href='deletecart.php?cname=$row[name]'> CANCEL</a><BR><br>
+    </tr>";
  }
  else{
 
     $purchase = "not purchased";
     echo"<td class = tdred><b>".$purchase."</b></td>";
+    echo"
+    <td class = opns><a class= op href='deletecart.php?cname=$row[name]'> CANCEL</a><BR><br>
+    <a class=op href='payment.php?name=$row[mobilename]'>go to payment page</a></td>
+    </tr>";
  }
- echo"
- <td class = opns><a class= op href='deletecart.php?cname=$row[name]'> CANCEL</a><BR><br>
- <a class=op href='edit.php'>EDIT</a></td>
- </tr>";
+
  }
  echo "</table>";
  ?>

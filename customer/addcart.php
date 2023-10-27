@@ -1,5 +1,5 @@
 <?php
-include('/wamp64/www/admin/connection.php');
+include('/wamp64/www/mobshop/admin/connection.php');
 if(isset($_POST['mycart']))
 {
 session_start();

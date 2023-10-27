@@ -7,14 +7,16 @@
                 <h1 class="head">
                     <a href="index.php"><img class="logo" src="\mobshop\images\ruby (1).png" wigth="50px" height="50px"><font class="head" color="skyblue">MARTTIZE</font></a><br>                  
                     <?php
+                     $option = $_POST['option'];
             include('/wamp64/www/mobshop/admin/connection.php');
             $dis="SELECT * FROM `category` WHERE 1";
             $result=mysqli_query($conn,$dis);
             echo "<form action = 'mobilecategory.php'  method = POST>
             <select name=option class=category>";
-            echo" <option>mobile types</option>";
+            echo" <option>".$option."</option>";
             while($row=mysqli_fetch_assoc($result))
             {         
+              if($row['cname'] != $option)
                echo "<option value=".$row['cname'].">".$row['cname']."</option>";
                 
             }
@@ -35,7 +37,7 @@
                 if(isset($_POST['submit']))
                 {
                  // include('/wamp64/www/admin/connection.php');
-                    $option = $_POST['option'];
+                   
                     if($option != "mobile types")
                     {
                     $dis="SELECT * FROM `addmobile` WHERE mtype = '$option'";

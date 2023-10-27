@@ -69,9 +69,88 @@
   .link{
     margin-top: 100px;
   }
+  .progress-bar {
+          display: flex;
+          margin-bottom: 50px;
+          margin-left: 200px;
+          }
+          .step {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 30px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background-color: #efefef;
+  margin-left: 130;
+}
+
+.step:after {
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 22px;
+  width: 225px;
+  height: 6px;
+  content: '';
+  background-color: #efefef;
+}
+
+.step:before {
+  color: #2e2e2e;
+  position: absolute;
+  top: 40px;
+}
+
+.step:last-child:after {
+  content: none;
+}
+
+.step.active {
+  background-color: #f62f5e;
+}
+.step.active:after {
+  background-color: #f62f5e;
+}
+.step.active:before {
+  color: #f62f5e;
+}
+
+.step.active + .step {
+  background-color: #f62f5e;
+}
+.step.active + .step:before {
+  color: #f62f5e;
+}
+
+.step:nth-child(1):before {
+  content: 'BUY';
+}
+.step:nth-child(2):before {
+  right: -40px;
+  content: 'PAYMENT';
+}
+.step:nth-child(3):before {
+  right: -30px;
+  content: 'SHIPPING';
+}
+.step:nth-child(4):before {
+  right: 0;
+  content: 'FINISH';
+}
+
      
     </style>
     <body bgcolor="gold">
+    <div class="progress-bar">
+        <div class="step active"></div>
+        <div class="step active"></div>
+        <div class="step active "></div>
+        <div class="step"></div>
+      </div>
     <table border="1">
                   <tr>
                     <th class="white">product</th>

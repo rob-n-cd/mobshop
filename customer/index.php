@@ -6,7 +6,7 @@
      $holdemail = $_SESSION['email'];
      $holdpassword = $_SESSION['pass'];
     if($holdemail ===null && $holdpassword === null)
-     header('location:gologin.');
+     header('location:face.html');
      else{
   ?>
     <title>Smarttize</title>
@@ -67,7 +67,6 @@ $result1=mysqli_query($conn,$dis);
           
             <br>
             <div class = buy >BUY NOW</div>
-            <input type=color name=sop>
             </a>
           </td>
         
@@ -178,10 +177,10 @@ $result1=mysqli_query($conn,$dis);
                 <div>
                   <br>
 
-                <span><ion-icon name="home"></ion-icon> <a href="phones.php">---Mobiles---</a></span><br><hr ><br>
-            <span><ion-icon name="call"></ion-icon> <a href="contact.php">---Contact---</a></span><br><hr><br>
-            <span><ion-icon name="book"></ion-icon> <a href="#">---About---</a></span><br><hr><br>
-            <span><ion-icon name="chatbox"></ion-icon> <a href="#">---Feedback---</a></span><br><hr><br><br>
+                <span ><ion-icon name="home"> </ion-icon> <a class="labels" href="phones.php">Mobiles</a></span><br><hr ><br>
+            <span><ion-icon name="call"> </ion-icon> <a class="labels" href="contact.php">Contact</a></span><br><hr><br>
+            <span><ion-icon name="book"> </ion-icon> <a class="labels" href="#">About</a></span><br><hr><br>
+            <span><ion-icon name="chatbox"> </ion-icon> <a class="labels" href="#">Feedback</a></span><br><hr><br><br>
             <?php
           include('/wamp64/www/mobshop/admin/connection.php');
             $dis="SELECT * FROM `register` WHERE 1";
@@ -231,6 +230,19 @@ $result=mysqli_query($conn,$dis);
     
 <!--------------------------------------------------CSS------------------------------------------------------------->                       
 <style>
+  .labels{
+    font-variant: small-caps;
+    font-feature-settings: "dnom";
+    letter-spacing: 2px;
+    font-size: larger;
+    font-stretch: narrower;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    font-variant-ligatures: no-discretionary-ligatures;
+    font-kerning:initial;
+    font-synthesis: style;
+  }
   .login{
     margin-left: 460px;
     margin-top: 79px;
@@ -271,7 +283,7 @@ $result=mysqli_query($conn,$dis);
   }
   .words{
     margin-top: 48px;
-    margin-left: 105px;
+    margin-left: px;
     color: white;
   }
   .icons{
@@ -372,7 +384,7 @@ body{
                                    .slide{
                                            margin-left:-8px;
                                            margin-top: -600px;
-                                           padding-bottom: 190px;
+                                           padding-bottom: 350px;
                                            width: 250px;
                                            height: 1007px;
                                            backdrop-filter: blur(40px);
