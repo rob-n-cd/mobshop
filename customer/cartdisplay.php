@@ -40,7 +40,7 @@ $display = "SELECT * FROM `mycart` WHERE 1";
     echo"<td class = tdred><b>".$purchase."</b></td>";
     echo"
     <td class = opns><a class= op href='deletecart.php?cname=$row[name]'> CANCEL</a><BR><br>
-    <a class=op href='payment.php?name=$row[mobilename]'>go to payment page</a></td>
+    <a class=op href='editpayment.php?ename=$row[mobilename]'>go to payment page</a></td>
     </tr>";
  }
 
